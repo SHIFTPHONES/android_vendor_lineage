@@ -10,15 +10,17 @@ PRODUCT_COPY_FILES += \
 # Lineage Platform Library
 PRODUCT_PACKAGES += \
     org.lineageos.platform-res \
+    org.lineageos.services \
     org.lineageos.platform
 
 # AOSP has no support of loading framework resources from /system_ext
 # so the SDK has to stay in /system for now
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/framework/oat/%/org.lineageos.platform.odex \
-    system/framework/oat/%/org.lineageos.platform.vdex \
+    system/framework/oat/%/org.lineageos.services.odex \
+    system/framework/oat/%/org.lineageos.services.vdex \
     system/framework/org.lineageos.platform-res.apk \
-    system/framework/org.lineageos.platform.jar
+    system/framework/org.lineageos.platform.jar \
+    system/framework/org.lineageos.services.jar
 
 ifndef LINEAGE_PLATFORM_SDK_VERSION
   # This is the canonical definition of the SDK version, which defines
