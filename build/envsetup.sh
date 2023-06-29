@@ -346,7 +346,12 @@ function githubremote()
         REMOTE=$(git config --get remote.clo.projectname)
     fi
 
-    local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
+    if [ -z "$REMOTE" ]
+    then
+        REMOTE=$(git config --get remote.shift.projectname)
+    fi
+
+    local PROJECT=$(echo $REMOTE | sed -e "s#SHIFTPHONES/##g; s#platform/#android/#g; s#/#_#g")
 
     git remote add github https://github.com/LineageOS/$PROJECT
     echo "Remote 'github' created"
