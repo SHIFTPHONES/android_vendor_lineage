@@ -16,6 +16,24 @@
       "message": "Do you think this should be done in device tree to be able to submit it to lineage as well or not?\n\nAs functionality wise it seems to be fine to be, unless i miss something.",
       "revId": "2658632619b6d939b4cac21601ef1b9c677251ec",
       "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "433cf27c_31eb7ef0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000049
+      },
+      "writtenOn": "2023-11-26T18:24:16Z",
+      "side": 1,
+      "message": "I thought of it. Doing it in device tree might not overwrite the one in lineage overlays. If it does, then this would be a better solution.\n\nReverting this completely and moving to device tree -\u003e has to be done on all devices which I am sure Lineage won\u0027t accept.",
+      "parentUuid": "022f4baf_1b1d669c",
+      "revId": "2658632619b6d939b4cac21601ef1b9c677251ec",
+      "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
     }
   ]
 }
