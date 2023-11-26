@@ -51,6 +51,23 @@
       "message": "well, then let\u0027s not worry to much about it yet and just take it in for us.\n\n/cc chirayu and mike",
       "revId": "2658632619b6d939b4cac21601ef1b9c677251ec",
       "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f660013_b6122a1f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-11-26T21:09:33Z",
+      "side": 1,
+      "message": "Note: this also causes ITS (`tests/scene0/test_solid_color_test_pattern.py`) to get skipped:\n\n```\n      # Determine if test is run or skipped\n      if cam.is_camera_privacy_mode_supported():\n        if not patterns_to_check:\n          raise AssertionError(\u0027neither SOLID_COLOR or BLACK are \u0027\n                               \u0027in android.sensor.availableTestPatternModes.\u0027)\n      else:\n        camera_properties_utils.skip_unless(patterns_to_check)\n```",
+      "revId": "2658632619b6d939b4cac21601ef1b9c677251ec",
+      "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
     }
   ],
   "submitRequirementResults": []
