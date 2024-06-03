@@ -16,6 +16,24 @@
       "message": "Actually you could also adjust the `repopick` function in `envsetup.sh` to always provide the shift gerrit instead, so we do not have to modify that repopick.\n\nI am fine with any way though, if that\u0027s what you like :)",
       "revId": "daca166541329ab2a59daa62a7bb14553835640f",
       "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9e51f4a_5d63ba30",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1000028
+      },
+      "writtenOn": "2024-06-03T10:50:36Z",
+      "side": 1,
+      "message": "oh, i didn\u0027t know i could provide it by using envsetup.sh",
+      "parentUuid": "8796f9d8_a0867a54",
+      "revId": "daca166541329ab2a59daa62a7bb14553835640f",
+      "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
     }
   ]
 }
