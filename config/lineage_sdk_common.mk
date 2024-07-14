@@ -10,8 +10,8 @@ PRODUCT_COPY_FILES += \
 # Lineage Platform Library
 PRODUCT_PACKAGES += \
     org.lineageos.platform-res \
-    org.lineageos.services \
-    org.lineageos.platform
+    original.services \
+    org.lineageos.platform \
 
 # AOSP has no support of loading framework resources from /system_ext
 # so the SDK has to stay in /system for now
