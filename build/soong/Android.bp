@@ -42,6 +42,22 @@ lineage_generator {
     ],
 }
 
+bootstrap_go_package {
+    name: "soong-lineage-mkdir",
+    pkgPath: "lineage/soong/mkdir",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+    ],
+    srcs: [
+        "mkdir/init.go",
+        "mkdir/mkdir.go",
+    ],
+    pluginFor: ["soong_build"],
+}
+
 cc_defaults {
     name: "generated_kernel_header_defaults",
     generated_headers: ["generated_kernel_includes"],
@@ -61,26 +77,6 @@ cc_library_headers {
 }
 
 // Target platform agnostic config modules
-soong_config_module_type {
-    name: "aapt_version_code",
-    module_type: "java_defaults",
-    config_namespace: "lineageGlobalVars",
-    value_variables: ["aapt_version_code"],
-    properties: ["aaptflags"],
-}
-
-aapt_version_code {
-    name: "aapt_version_code_defaults",
-    soong_config_variables: {
-        aapt_version_code: {
-            aaptflags: [
-                "--version-code",
-                "%s",
-            ],
-        },
-    },
-}
-
 soong_config_module_type {
     name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
