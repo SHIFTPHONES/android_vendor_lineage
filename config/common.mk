@@ -125,15 +125,15 @@ PRODUCT_PACKAGES += \
     Jelly
 endif
 
-ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
-PRODUCT_PACKAGES += \
-    LineageParts \
-    LineageSetupWizard
-endif
+#ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
+#PRODUCT_PACKAGES += \
+#    LineageParts \
+#    LineageSetupWizard
+#endif
 
-PRODUCT_PACKAGES += \
-    LineageSettingsProvider \
-    Updater
+#PRODUCT_PACKAGES += \
+#    LineageSettingsProvider \
+#    Updater
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
