@@ -127,12 +127,12 @@ endif
 
 ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
 PRODUCT_PACKAGES += \
-    LineageParts \
-    LineageSetupWizard
+    SHIFT-Parts \
+    SHIFT-SetupWizard
 endif
 
 PRODUCT_PACKAGES += \
-    LineageSettingsProvider \
+    SHIFT-SettingsProvider \
     Updater
 
 PRODUCT_COPY_FILES += \

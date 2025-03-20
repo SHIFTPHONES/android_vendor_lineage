@@ -28,10 +28,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     TrebuchetQuickStepGo
 else
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStep
+    SHIFT-Home
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStep
+    SHIFT-Home
 endif
 
 PRODUCT_PACKAGES += \
