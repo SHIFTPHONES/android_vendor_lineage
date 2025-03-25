@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ed5fbfc_52040f0e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2025-03-25T13:21:34Z",
+      "side": 1,
+      "message": "For reference, we want to make this work with `sos-7.x`.",
+      "revId": "712a3638e91d743f22ba5505a9547fb5b6dc2e5a",
+      "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
+    }
+  ]
+}
