@@ -16,6 +16,24 @@
       "message": "For reference, we want to make this work with `sos-7.x`.",
       "revId": "712a3638e91d743f22ba5505a9547fb5b6dc2e5a",
       "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47d16766_32496301",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000049
+      },
+      "writtenOn": "2025-03-25T14:04:12Z",
+      "side": 1,
+      "message": "Related patching for this project is put on hold too. So, let\u0027s handle this as part of `Add full support for Seedvault` topic otter-100",
+      "parentUuid": "4ed5fbfc_52040f0e",
+      "revId": "712a3638e91d743f22ba5505a9547fb5b6dc2e5a",
+      "serverId": "5979fb85-960d-4ec4-8ce0-8568b21942fe"
     }
   ]
 }
