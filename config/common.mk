@@ -27,23 +27,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 endif
 endif
 
-ifeq ($(TARGET_BUILD_VARIANT),eng)
+ifneq ($(TARGET_BUILD_VARIANT),user)
 # Disable ADB authentication
 PRODUCT_SYSTEM_EXT_PROPERTIES += ro.adb.secure=0
-else
-ifdef WITH_ADB_INSECURE
-# Forcebly disable ADB authentication
-PRODUCT_SYSTEM_EXT_PROPERTIES += ro.adb.secure=0
-else
-# Enable ADB authentication
-PRODUCT_SYSTEM_EXT_PROPERTIES += ro.adb.secure=1
-
-# Set ro.debuggable=0 for userdebug
-PRODUCT_NOT_DEBUGGABLE_IN_USERDEBUG := true
-endif
-
-# Disable extra StrictMode features on all non-engineering builds
-PRODUCT_PRODUCT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
 # Backup Tool
